@@ -1,5 +1,5 @@
 # iOS-Study
-🍫iOS Study in FastCampus iOS 10th
+🍫 Study Swift and iOS Frameworks
 > [Members](https://github.com/orgs/Facam-10th/people)
 
 ## Log
