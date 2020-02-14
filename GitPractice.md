@@ -22,3 +22,7 @@ git pull Request second practice - yukkong
 git pull Second Request 연습입니다. - jinjin
 
 second git pull request practicing - martinolee
+
+Second git pull request practicing is hard  - Lance ahn  
+
+
