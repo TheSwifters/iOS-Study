@@ -17,4 +17,9 @@ git pull Request 연습입니다. -jinjin
 
 git pull Request 연습입니다. - hong3
 
+<<<<<<< HEAD
 git pull Request second practice - yukkong 
+=======
+git pull Second Request 연습입니다. - jinjin
+
+>>>>>>> upstream/master
