@@ -16,3 +16,5 @@ git pull Request 연습입니다. - "Lance-Ahn"
 git pull Request 연습입니다. -jinjin
 
 git pull Request 연습입니다. - hong3
+
+git pull Request second practice - yukkong 
