@@ -19,7 +19,7 @@
 ### - if
 if 구문은 하나 또는 그 이상의 조건을 평가하고 결과에 따라 코드 블록의 실행여부를 결정하는 구문 이다.
 
-#### - if
+- if  
 if 구문의 가장 기본적인 형태 이다 <조건식> 에는 반드시 Bool 타입이 들어가야 하며,  
 들어간 조건식의 값이 true 이면 <실행할 구문>을  실행 하고 false 이면 실행하지 않고 건너뛴다.
 
@@ -29,7 +29,7 @@ print("condition is true")
 }
 ```
 
-#### - if ~else
+- if ~else  
 if ~ else 구문은 if 구문이 참이 아닐경우 else 구문의 코드블럭의 동작이 실행된다.
 
 ```swift
@@ -40,7 +40,7 @@ print("condition is false")
 }
 ```
 
-#### - if ~ else if
+- if ~ else if  
 if ~ else if 구문은 if 구문이 참이 아닌경우 그다음 else if 구문의 조건을 확인하여 참인경우 그 else if 구문의 코드블럭의 동작을 실행 한다.  
 그 else if 문의 조건 또한 참이 아닐경우 다음 else if 문의 조건을 확인한다.  
 여러개의 else if 문을 사용 할 수 있고   모든 조건이 참이 아닐경우 else 문이 있다면 else 문의 코드블럭의 동작을 실행하고 else문이 없다면 아무 동작도 하지 않는다.  
@@ -75,7 +75,7 @@ guard 구문은 else 블록이 반드시 있어야 하며 else 블록에는 이�
  #available 구문을 사용하면 직접적으로 OS의 버전을 구분 할 수 있다.
 
 ```swift
-if #available(iOS 13, OSX 10.15, watch 1, *) {
+if #available(iOS 13, OSX 10.15, watchOS 1, *) {
 // iOS 13버전, OSX 10.15버전, watch 1 버전에 대한 조건
 }
 ```
