@@ -164,8 +164,127 @@ case .second:
 
 <h2 layout: fragment = "Loop" > Loop Statements </h2>
 반복문은 주어진 조건에 따라 특정 코드 블록을 반복적으로 실행할 수 있게 해주는 구문 이다.  
+프로그래밍에서 코드 블록의 반복을 루프(Loop)라고 부르고 반복 횟수를 루프 횟수라고 부르는데,  
+스위프트에서 제공하는 반복문은 루프 횟수가 정해져 있는지를 기준으로 두 가지 방식으로 나눌 수 있다.
 
+### - for ~ in 
+for 반복문은 횟수에 의한 반복문 이다.  
 
+- 구문의 형식
+
+```
+for <루프 상수> in <순회 대상> {
+<실행할 구문>
+}
+```
+for ~ in 구문은 <순회 대상> 을 순회하면서 순회 대상의 아이템의 갯수 만큼 반복 수행 된다.   
+순회 대상이 가지고 있는 아이템 들을 차례로 <루프 상수> 에 임의 저장하고, 실행 구문 안에서 사용할 수 있다. 
+순회 대상으로 사용할 수 있는 데이터 타입에는 다음과 같은 타입 들이 있다.
+
+- 범위 데이터
+
+```swift
+for i in 0...5 {
+    print(i)
+}
+
+// 루프 상수의 생략이 가능하다.
+var result = 0
+
+for _ in 0...5 {
+    result += 1
+}
+print(result)
+```
+
+- 배열(Array)
+
+```swift
+let someIntArray = [1, 2, 3, 4, 5]
+
+for num in someIntArray {
+    print(num)
+}
+// 배열은 순서가 있기 때문에 1 ~ 5 순서대로 출력 될 것이다.
+```
+
+- 딕셔너리(Dictionary)
+
+```swift
+let someDictionary = ["first": 1, "second": 2,"third": 3]
+
+for element in someDictionary {
+    print("key: \(element.key), value: \(element.value)")
+}
+// 배열이나 범위 연산자와는 다르게 딕셔너리는 순서가 없기 때문에 어떤 순서로 출력 될지는 알 수 없다.
+
+for ( _, value) in someDictionary {
+    print(value)
+}
+// 이런식으로 key와 value 중 key만 생략하거나 value만 생략하거나 할 수 있다.
+```
+
+- 집합(Set)
+
+```swift
+let someSet: Set = [1, 2, 3, 4]
+
+for element in someSet {
+    print(element)
+}
+// 딕셔너리와 마찬가지로 순서없이 출력될 것이다.
+```
+
+- 문자열(String)
+
+```swift
+let someString = "Hello World"
+
+for char in someString {
+    print(char)
+}
+// 문자열은 Character타입들이 모여 이루는 집단적 성격의 데이터이고 순서가 있다.
+// 순서가 있기 때문에 앞에서부터 순서대로 한글자씩 출력될 것이다.
+```
+
+### - while 반복문
+while 구문은 주어진 조건식의 결과가 false 가 될 때 까지 실행 구문을 반복 수행 한다.  
+다시말해 while 구문은 조건을 만족하는동안 계속 실행 된다는 것이다.  
+while 구문은 보통 실행 횟수가 명확하지 않거나, 실행횟수를 기반으로 할 수 없는 조건일 경우 사용한다.
+
+- 구문의 형식
+
+```
+while <조건식>{
+<실행 구문>
+}
+```
+
+- while 
+
+```swift
+var number = 2
+
+while number < 1000 {
+    number *= 2
+}
+
+print(number) // 1024
+```
+
+- repeat ~ while  
+repeat ~ while 구문은 조건식을 먼저 평가하고 실행구문을 실행하는 while 문과 다르게 실행 구문을 먼저 실행하고 조건식이 true이면 반복 실행 하는 구문 이다.   
+조건이 true 이던 false 이던 최초 한번은 실행을 보장하는 구문 이다.
+
+```swift
+var number = 1024
+
+repeat {
+    number *= 2
+} while number < 1000
+
+print(number) // 2048
+```
 
 
 ## Control Transfer Statements
