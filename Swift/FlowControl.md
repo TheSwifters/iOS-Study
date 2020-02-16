@@ -6,22 +6,22 @@
 
 스위프트는 일반적으로 통용되는 흐름 제어 구문 대부분을 제공하는데, 성격에 따라 세가지로 나눌 수 있다.  
 
-- 조건문(Conditional Statments)
-- 반복문(Loop Statements)
-- 제어 전달문(Control Transfer Statements)
+##Contents
+- [Conditional Statments(조건문)](https://github.com/JoongChangYang/iOS-Study/tree/master/Swift/FlowControl.md#Conditional)
+- [Loop Statements(반복문)](https://github.com/JoongChangYang/iOS-Study/tree/master/Swift/FlowControl.md#Loop)
+- Control Transfer Statements(제어 전달문)
 
--
 
-## - 조건문
+<h2 layout: fragment = "Conditional" > Conditional Statments </h2>
 조건문은 프로그램에서 하나 또는 그 이상의 조건값에 따라 특정 구문을 실행하도록 프로그램의 흐름을 분기하는 역할을 한다.  
-조건문 에서 사용되는 조건 값은 프로그램이 어떻게 분기되고, 어느부분의 코드가 실행될지를 결정하는데 사용된다.   
-실행 방식에 따라 조건문이 세분화 되는데, 스위프트에서 제공하는 조건문은 크게 세가지가 있다.  
+조건문 에서 사용되는 조건 값은 프로그램이 어떻게 분기되고, 어느부분의 코드가 실행될지를 결정하는데 사용된다.  
+
 ### - if
 if 구문은 하나 또는 그 이상의 조건을 평가하고 결과에 따라 코드 블록의 실행여부를 결정하는 구문 이다.
 
 - if  
-if 구문의 가장 기본적인 형태 이다 <조건식> 에는 반드시 Bool 타입이 들어가야 하며,  
-들어간 조건식의 값이 true 이면 <실행할 구문>을  실행 하고 false 이면 실행하지 않고 건너뛴다.
+if 구문의 가장 기본적인 형태 이다 조건식에는 반드시 Bool 타입이 들어가야 하며,  
+들어간 조건식의 값이 true 이면 실행할 구문을  실행 하고 false 이면 실행하지 않고 건너뛴다.
 
 ```swift
 if condition {
@@ -132,6 +132,7 @@ print("default")
 
 //튜플의 경우
 let value = (1, 3)
+
 switch value {
 case let (x, 3):
 print("When second value of tuple is 3, the first value is \(x)")
@@ -161,10 +162,13 @@ case .second:
 
 
 
-### - 반복문
-반복문은 주어진 조건에 따라 코드 블록을 반복적으로 실행 하고
+<h2 layout: fragment = "Loop" > Loop Statements </h2>
+반복문은 주어진 조건에 따라 특정 코드 블록을 반복적으로 실행할 수 있게 해주는 구문 이다.  
 
 
+
+
+## Control Transfer Statements
 
 
 
