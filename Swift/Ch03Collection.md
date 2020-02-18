@@ -360,7 +360,7 @@
   - [index]형식이 아닌 .index형식
 
 ```swift
-let tupleValue = (“A”, “b”, 1,  2.5, true)	// 
+let tupleValue = (“A”, “b”, 1,  2.5, true)	
 
 tupleValue.0		// A
 tupleValue.1		// b
@@ -402,7 +402,8 @@ tupleValue.1		// b
   - 함수나 메소드에서 둘 이상의 값 반환할 때 튜플을 사용하여 전달
 
     ```swift
-    func getTupleValue() -> (String, Character, Int) { 			return (“김유진”, “M”, “27”)
+    func getTupleValue() -> (String, Character, Int) { 			
+	return (“김유진”, “M”, “27”)
     }
     
     let (name, gender, age) = getTupleValue()
@@ -460,7 +461,7 @@ tupleValue.1		// b
   user = Dictionary<String, Int>()
   user2 = [String: String]()
   user3 = Dictionary()		// 타입 어노테이션을 통해 딕셔너리 타입을 명시적으로 선언한 경우에만 사용 가능
-  user4 = [:]							// 빈 딕셔너리를 넣어준 것, 타입 어노테이션을 통해 딕셔너리 타입을 명시한 경우에만 사용가능
+  user4 = [:]			// 빈 딕셔너리를 넣어준 것, 타입 어노테이션을 통해 딕셔너리 타입을 명시한 경우에만 사용가능
   
   ```
 
@@ -504,17 +505,17 @@ tupleValue.1		// b
   ```swift
   let mascot: [String: String] = ["EBS": "펭수", "디즈니": "엘사"]
   for row in mascot {
-  	let(key, value) = row
-  	print(“현재 \(key): \(value) ”) }
+    let(key, value) = row
+    print(“현재 \(key): \(value) ”) }
   }
-  // 현재 EBS: 펭수
-  // 현재 디즈니: 엘사
+  		// 현재 EBS: 펭수
+  		// 현재 디즈니: 엘사
   
   for (key, value) in mascot {
     print(“현재 \(key): \(value) ”) }
   }
-  // 현재 EBS: 펭수
-  // 현재 디즈니: 엘사
+ 		 // 현재 EBS: 펭수
+  		// 현재 디즈니: 엘사
   ```
 
   
