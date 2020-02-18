@@ -8,10 +8,10 @@
 ## Contents
 
 
-- A. Array
-- B. Set
-- C. Tuple
-- D. Dictionary
+- [A. Array](https://github.com/eujin811/iOS-Study/blob/jinjin/Swift/Ch03Collection.md#a-array-%EB%B0%B0%EC%97%B4)
+- [B. Set](https://github.com/eujin811/iOS-Study/blob/jinjin/Swift/Ch03Collection.md#b-set-%EC%A7%91%ED%95%A9)
+- [C. Tuple](https://github.com/eujin811/iOS-Study/blob/jinjin/Swift/Ch03Collection.md#c-tuple)
+- D. [Dictionary](https://github.com/eujin811/iOS-Study/blob/jinjin/Swift/Ch03Collection.md#d-dictionary)
 
 
 
