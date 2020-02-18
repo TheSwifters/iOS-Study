@@ -3,6 +3,8 @@
 
 
 
+
+
 ## Contents
 
 
@@ -13,7 +15,10 @@
 
 
 
+
+
 ## A. Array (배열)
+
 
 
 - index로 구분되는 순서에 따라 데이터가 정렬된 목록 형태의 자료형
@@ -38,35 +43,29 @@
 - 사용 방법
 
   - 선언과 초기화
-  - 1.
+  - 
 
   ```swift
-  var arr: Array<String> 	// 선언
+  var arr: Array<String> 		// 선언
   
   var arr2 = Array<String>() 	// 선언과 초기화 동시에 초기화
-  ```
-
-  ```swift
+ 
   // 1. 초기화
-  arr = Array()						// 선언시 지정타입 지정하면 타입생략 가능
+  arr = Array()			// 선언시 지정타입 지정하면 타입생략 가능
   
   
-  ```
-
-  ```swift
   // 2. 초기화
   arr = Array<String>()			
   ```
-
-  - 2.
+ 
 
   ```swift
   var student: [String]			// 선언
   student = [String]()			// 초기화
-  student = []							// 초기화, 빈배열을 새로 만들어 넣는 것이기 때문에 초기화라고 보지 않는 경우도 있다.
-  ```
+  student = []				// 초기화, 빈배열을 새로 만들어 넣는 것이기 때문에 초기화라고 보지 않는 경우도 있다.
+  
 
-  ```swift
+
   var student = [String]()		// 선언과 초기화
   ```
 
@@ -176,7 +175,9 @@
 
 
 
+
 ## B. Set (집합)
+
 
 
 - 중복되지 않은 유일 데이터들이 모인 집합 형태의 자료형
@@ -190,6 +191,7 @@
   - 스위프트에서 기본으로 제공하는 타입 아닐 경우 Hashable 프로토콜을 구현해야한다.
 
 - 인덱스가 없고, 넣는 순서대로 들어가지 않는다. (값이 해시연산되어 들어가기 때문)
+
 
 - 사용법
 
@@ -325,7 +327,10 @@
 
 
 
+
+
 ## C. Tuple 
+
 
 
 - 타입과 상관없이 데이터들을 모은 자료형
@@ -403,9 +408,12 @@ tupleValue.1		// b
     let (name, gender, age) = getTupleValue()
     ```
 
+
+
   
 
 ## D. Dictionary
+
 
 
 
