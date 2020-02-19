@@ -26,4 +26,4 @@ Swift에 대해 언제든 간편하게 참고할 수 있는 Cheat Sheet를 만�
 | 날짜     | 발표자                                   | 내용                                     | 링크                                                         |
 | -------- | ---------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
 | 20.02.17 | [Chamsol Kim](https://github.com/cskime) | Swift Basic, 변수와 상수, 자료형, 연산자 | [CH01. Hello Swift](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH01.HelloSwift.md) |
-
+| 20.02.18 | [JoongChangYang](https://github.com/JoongChangYang) | 흐름 제어 구문  |  [CH02. FlowControl](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH02.FlowControl.md)  |
