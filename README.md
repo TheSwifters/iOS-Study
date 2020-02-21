@@ -1,7 +1,9 @@
 #  iOS-Study
 ## Overview
 
-Swfit 및 iOS에 대해 스터디하는 공간입니다.
+Swfit 및 iOS에 대해 스터디하고 내용을 정리하는 공간입니다.
+
+언제든 간편하게 참고할 수 있는 Cheat Sheet를 만듭니다.
 
 > 👩🏻‍💻 참여한 사람들 🧑🏻‍💻
 >
@@ -15,7 +17,13 @@ Swfit 및 iOS에 대해 스터디하는 공간입니다.
 > - [wanderingfairy](https://github.com/wanderingfairy)
 > - [you kyung](https://github.com/wydryd125)
 
+## Tools
+
+- 📙 꼼꼼한 재은씨의 Swift(문법편)
+- 🛠 Xcode
+
 ## Contents
+
 | 날짜 | 발표자 | 내용 | 자료 |
 |-----|------|-----|-----|
 | 20.02.14 | [hongdonghyun](https://github.com/hongdonghyun) | 사전모임<br />Git & Github Pull Request | [HOW_TO_USE](https://github.com/TheSwifters/iOS-Study/blob/master/HOW_TO_USE.md) |
