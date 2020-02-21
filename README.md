@@ -17,7 +17,7 @@ Swfit 및 iOS에 대해 스터디하는 공간입니다.
 
 ## Contents
 | 날짜 | 발표자 | 내용 | 자료 |
-|:----|:-----|:----|-----|
+|-----|------|-----|-----|
 | 20.02.14 | [hongdonghyun](https://github.com/hongdonghyun) | 사전모임<br />Git & Github Pull Request | [HOW_TO_USE](https://github.com/TheSwifters/iOS-Study/blob/master/HOW_TO_USE.md) |
 | 20.02.17 | [Chamsol Kim](https://github.com/cskime) | Swift 기본 개념 | [Ch01. Hello Swift](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH01.HelloSwift.md) |
 | 20.02.18 | [JoongChangYang](https://github.com/JoongChangYang) | 흐름제어<br />조건, 반복, 제어전달 | [CH02. Flow Control](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH02.FlowControl.md) |
