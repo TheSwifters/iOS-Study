@@ -31,7 +31,7 @@ Swfit 및 iOS에 대해 스터디하고 내용을 정리하는 공간입니다.
 | 20.02.18 | [JoongChangYang](https://github.com/JoongChangYang) | 흐름제어<br />조건, 반복, 제어전달 | [CH02. Flow Control](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH02.FlowControl.md) |
 | 20.02.19 | [eujin811](https://github.com/eujin811) | Collection and Tuple<br />- Array, Dictionary, Set | WIP |
 | 20.02.20 | [wanderingfairy](https://github.com/wanderingfairy) | Optional | WIP |
-| 20.02.21 | [jisng](https://github.com/jisng) | Function: Basic | WIP |
+| 20.02.21 | [jisng](https://github.com/jisng) | Function: Basic | [CH05. Function-Basic](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH05.Function-Basic.md) |
 | 20.02.24 | [hongdonghyun](https://github.com/hongdonghyun) | Function: Closure | NY |
 | 20.02.25 | [Lance-Ahn](https://github.com/Lance-ahn) | Class and Struct<br />- Basic, Property, Method | NY |
 | 20.02.26 | [Soohan Lee](https://github.com/martinolee) | Class and Struct<br />- Initialize<br />- Inheritance<br />- Type Casting<br />- Optional Chaining | NY |
