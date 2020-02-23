@@ -582,14 +582,18 @@
     let mascot: [String: String] = ["EBS": "펭수", "디즈니": "엘사"]
     
     for row in mascot {
-  	let(key, value) = row
+  	
+	let(key, value) = row
     	print(“현재 \(key): \(value) ”) 
+    
     }
   		// 현재 EBS: 펭수
   		// 현재 디즈니: 엘사
 
     for (key, value) in mascot {
-  	print(“현재 \(key): \(value) ”) 
+  	
+	print(“현재 \(key): \(value) ”) 
+	
     }
    		 // 현재 EBS: 펭수
   		// 현재 디즈니: 엘사
