@@ -327,7 +327,7 @@
   odd.subtract(num)		// 5,7,9
   ```
 
-  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg)
+  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg){: width="50%" height="50%"}
 
   
 
