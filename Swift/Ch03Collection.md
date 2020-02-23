@@ -583,7 +583,7 @@
     
     for row in mascot {
   	
-	let(key, value) = row
+		let(key, value) = row
     	print(“현재 \(key): \(value) ”) 
     
     }
@@ -592,7 +592,7 @@
 
     for (key, value) in mascot {
   	
-	print(“현재 \(key): \(value) ”) 
+		print(“현재 \(key): \(value) ”) 
 	
     }
    		 // 현재 EBS: 펭수
