@@ -52,14 +52,14 @@
   ```swift
   
   // 1. 
-  	var arr: Array<String> 			// 선언
+    var arr: Array<String> 			// 선언
   
-  	var arr2 = Array<String>() 	// 선언과 초기화 
+    var arr2 = Array<String>() 	// 선언과 초기화 
    
   	//  초기화
-  	arr = Array()			// 선언시 지정타입 지정하면 타입생략 가능
+    arr = Array()			// 선언시 지정타입 지정하면 타입생략 가능
   
-  	arr = Array<String>()		
+    arr = Array<String>()		
   
   
   // 2.
@@ -95,7 +95,7 @@
     student[2...4]		// 유진, 의석, 지승
     student[3..<5]		// 의석, 지승
     
-    tudent[5...8] = ["이수한"]	 // 삭제, 재배치
+    student[5...8] = ["이수한"]	 // 삭제, 재배치
     // ["참솔", "중창", "유진", "의석", "지승", "이수한"]
     ```
 
@@ -161,23 +161,26 @@
       print("\(i)번째 학생은 \(student[i])입니다.")
     }
     // 참솔
-// 중창
+    // 중창
     // 유진
-// ...
+    // ...
+
     ```
     
     
     
     - Lterator: for문에 배열을 직접 넣어 사용하는 방식
     
-```swift
-    for row in student {
-  let index = student.index(of: row)
-      print(“\(index)번째 학생은  \(row)”)
-    }
+    ```swift
+     for row in student {
+      	let index = student.index(of: row)
+          	print(“\(index)번째 학생은  \(row)”)
+        }
     ```
     
     
+
+​    
 
 
 
@@ -222,9 +225,9 @@ print( Array(Set(arr)) )			// 1,2,3,8
   ```
 
   ```swift
-// 타입을 설정하지 않아도 가능하다.
+  // 타입을 설정하지 않아도 가능하다.
   var id: Set = [“Chamsol Kim”, “eujin811”, “hondonghyun”, “jisng”, “JoongChangYang”, “Lance-Ahn”, “Soohan Lee”, “wanderingfairy”, “you kyung”]
-```
+  ```
   
   
   
@@ -238,33 +241,34 @@ print( Array(Set(arr)) )			// 1,2,3,8
   
   ```swift
     id.insert("gitbot")
-    ```
+  ```
   
 - 크기확인
   
 ```swift
   id.count			// 9
-  ```
-  
+```
+
 - 아이템확인 : true, false
-  
 ```swift
   id.contains("jisong")		// true
-  ```
-  
+```
+
 - 순회탐색
 
-  ```swift
-  for i in id {
-    print(i)
-  }
-  
-  // “you kyung” 
-  // “eujin811”
-  // “hondonghyun” 
-  // “jisng” 
-  // ...
-  ```
+```swift
+for i in id {
+  print(i)
+}
+
+// “you kyung” 
+// “eujin811”
+// “hondonghyun” 
+// “jisng” 
+// ...
+```
+
+
 
 - 정렬 -> sort()
 
@@ -323,7 +327,13 @@ print( Array(Set(arr)) )			// 1,2,3,8
   odd.subtract(num)		// 5,7,9
   ```
 
-  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg)
+  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg){: width="50%" height="50%"}
+
+  
+
+  
+
+  
 
 - isSubset(of:) 
 
@@ -376,7 +386,7 @@ print( Array(Set(arr)) )			// 1,2,3,8
 
 - 순회의 특성을 지원하지 않는다. 
 
-  - (for ~ in 구문의 조건에 넣어서 사용 불가. 
+  - for ~ in 구문의 조건에 넣어서 사용 불가. 
   - index가 속성 형식으로 있기 때문
 
   
@@ -395,7 +405,7 @@ print( Array(Set(arr)) )			// 1,2,3,8
 
 - 사용법
 
-  - []이 아닌 ()을 이용
+  - 값을 넣을 때 [ ]이 아닌 ( )을 이용
   - [index]형식이 아닌 .index형식
   
   ```swift
@@ -511,7 +521,7 @@ print( Array(Set(arr)) )			// 1,2,3,8
   var user3: [String: Int]
   var user4: [String: Int]
   
-user = Dictionary<String, Int>()
+  user = Dictionary<String, Int>()
   user2 = [String: String]()
 
   // 타입 어노테이션을 통해 딕셔너리 타입을 명시적으로 선언한 경우
@@ -525,9 +535,9 @@ user = Dictionary<String, Int>()
     - 없는 키 적고 바로 값 넣어서 아이템 추가하는 경우
 
     ```swift
-  var mascot = [String: String]()
-    mascot["EBS"] = "뽀로로"			// 추가 (없는 키에 값을 넣어 추가)
-    mascot["EBS"] = "펭수"			//	수정 
+     var mascot = [String: String]()
+     mascot["EBS"] = "뽀로로"			// 추가 (없는 키에 값을 넣어 추가)
+     mascot["EBS"] = "펭수"			//	수정 
     ```
   
     
@@ -536,49 +546,58 @@ user = Dictionary<String, Int>()
     - 수정, 추가 전 값을 반환
   
     ```swift
-  mascot.updateValue("미키마우스", forKey: "디즈니")	// 추가
-    // nil반환
+     mascot.updateValue("미키마우스", forKey: "디즈니")	// 추가
+     // nil반환
     
-    mascot.updateValue("엘사", forKey: "디즈니")		// 수정, 수정전 value반환
-    // 미키마우스
+     mascot.updateValue("엘사", forKey: "디즈니")		// 수정, 수정전 value반환
+     // 미키마우스
     
     ```
 
+    
+
   - 아이템 삭제
-
-    - nil값 넣는 방법
-    - removeValue(forKey:)
-      - 삭제한 값 반환, 없는 키 삭제시 nil값 반환
-
-  ```swift
-  mascot["EBS"] = nil
   
-  removeValue(forKey: "디즈니")		// 엘사
-  removeValue(forKey: "디즈니")		// nil
-  ```
-
+    - nil값 넣는 방법
+  
+    ```swift
+    mascot["EBS"] = nil
+    ```
+    
+    
+    
+  - removeValue(forKey:)
+      - 삭제한 값 반환, 없는 키 삭제시 nil값 반환
+  
+    ```swift
+    mascot.removeValue(forKey: "디즈니")		// 엘사
+    mascot.removeValue(forKey: "디즈니")		// nil
+    ```
+    
+    
+  
   - 순회 탐색
-
+  
   ```swift
   let mascot: [String: String] = ["EBS": "펭수", "디즈니": "엘사"]
   for row in mascot {
-    let(key, value) = row
+	  let(key, value) = row
     print(“현재 \(key): \(value) ”) }
   }
-  		// 현재 EBS: 펭수
+		// 현재 EBS: 펭수
   		// 현재 디즈니: 엘사
-  
+
   for (key, value) in mascot {
-    print(“현재 \(key): \(value) ”) }
+  print(“현재 \(key): \(value) ”) }
   }
-	 		 // 현재 EBS: 펭수
+   		 // 현재 EBS: 펭수
   		// 현재 디즈니: 엘사
   ```
-
   
-
   
-
+  
+  
+  
   
 
 
