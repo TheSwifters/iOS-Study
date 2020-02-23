@@ -49,28 +49,28 @@
 
   - 선언과 초기화
 
-  ```swift
+    ```swift
+    
+    // 1. 
+      var arr: Array<String> 			// 선언
   
-  // 1. 
-    var arr: Array<String> 			// 선언
-  
-    var arr2 = Array<String>() 	// 선언과 초기화 
+      var arr2 = Array<String>() 	// 선언과 초기화 
    
-  	//  초기화
-    arr = Array()			// 선언시 지정타입 지정하면 타입생략 가능
+    	//  초기화
+      arr = Array()			// 선언시 지정타입 지정하면 타입생략 가능
   
-    arr = Array<String>()		
+      arr = Array<String>()		
   
+    
+    // 2.
+      var student = [String]()		// 선언과 초기화
   
-  // 2.
-    var student = [String]()		// 선언과 초기화
-  
-    var student: [String]			// 선언
-  
-    student = [String]()			// 초기화
-  
-    student = []				// 리터럴 초기화, 빈배열을 새로 만들어 넣는 것이기 때문에 초기화라고 보지 않는 경우도 있다.
-  ```
+      var student: [String]			// 선언
+    
+      student = [String]()			// 초기화
+    
+      student = []				// 리터럴 초기화, 빈배열을 새로 만들어 넣는 것이기 때문에 초기화라고 보지 않는 경우도 있다.
+    ```
 
   
 
@@ -194,11 +194,11 @@
   - 값이 해시연산되어 들어가기 때문
 - arr에서 중복된 값 배제할 때 자주 사용된다
 
-```swift
-let arr = [1,2,3,7,7,7,8]
-
-print( Array(Set(arr)) )			// 1,2,3,8
-```
+  ```swift
+  let arr = [1,2,3,7,7,7,8]
+  
+  print( Array(Set(arr)) )			// 1,2,3,8
+  ```
 
 
 
@@ -215,19 +215,19 @@ print( Array(Set(arr)) )			// 1,2,3,8
 
   - 선언과 초기화
 
-  ```swift
-  // 1.
-  var id: Set<String>			// 선언
-  id = Set<String>()				// 초기화
+    ```swift
+    // 1.
+    var id: Set<String>			// 선언
+    id = Set<String>()				// 초기화
+  
+    // 2.
+    var id = Set<String>()		// 선언과 초기화
+    ```
 
-  // 2.
-  var id = Set<String>()		// 선언과 초기화
-  ```
-
-  ```swift
-  // 타입을 설정하지 않아도 가능하다.
-  var id: Set = [“Chamsol Kim”, “eujin811”, “hondonghyun”, “jisng”, “JoongChangYang”, “Lance-Ahn”, “Soohan Lee”, “wanderingfairy”, “you kyung”]
-  ```
+    ```swift
+    // 타입을 설정하지 않아도 가능하다.
+    var id: Set = [“Chamsol Kim”, “eujin811”, “hondonghyun”, “jisng”, “JoongChangYang”, “Lance-Ahn”, “Soohan Lee”, “wanderingfairy”, “you kyung”]
+    ```
   
   
   
@@ -239,34 +239,34 @@ print( Array(Set(arr)) )			// 1,2,3,8
       - 값을 넣을 때마다 해시 연산하여 순서를 정하기 때문
     - insert(_:)
   
-  ```swift
-    id.insert("gitbot")
-  ```
+    ```swift
+      id.insert("gitbot")
+    ```
   
 - 크기확인
   
-```swift
-  id.count			// 9
-```
+  ```swift
+    id.count			// 9
+  ```
 
 - 아이템확인 : true, false
-```swift
-  id.contains("jisong")		// true
-```
+  ```swift
+    id.contains("jisong")		// true
+  ```
 
 - 순회탐색
 
-```swift
-for i in id {
-  print(i)
-}
+  ```swift
+  for i in id {
+    print(i)
+  }
 
-// “you kyung” 
-// “eujin811”
-// “hondonghyun” 
-// “jisng” 
-// ...
-```
+  // “you kyung” 
+  // “eujin811”
+  // “hondonghyun” 
+  // “jisng” 
+  // ...
+  ```
 
 
 
@@ -327,7 +327,7 @@ for i in id {
   odd.subtract(num)		// 5,7,9
   ```
 
-  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg){: width="50%" height="50%"}
+  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg)
 
   
 
@@ -515,84 +515,84 @@ for i in id {
 
   - 선언과 초기화
 
-  ```swift
-  var user: Dictionary<String, Int>
-  var user2: [String: String]
-  var user3: [String: Int]
-  var user4: [String: Int]
+    ```swift
+    var user: Dictionary<String, Int>
+    var user2: [String: String]
+    var user3: [String: Int]
+    var user4: [String: Int]
+    
+    user = Dictionary<String, Int>()
+    user2 = [String: String]()
   
-  user = Dictionary<String, Int>()
-  user2 = [String: String]()
-
-  // 타입 어노테이션을 통해 딕셔너리 타입을 명시적으로 선언한 경우
-  user3 = Dictionary()		
-  user4 = [:]			// 리터럴 초기화
-  
-  ```
+    // 타입 어노테이션을 통해 딕셔너리 타입을 명시적으로 선언한 경우
+    user3 = Dictionary()		
+    user4 = [:]			// 리터럴 초기화
+    
+    ```
   
   - 아이템 추가, 수정
 
-    - 없는 키 적고 바로 값 넣어서 아이템 추가하는 경우
+    - 없는 키에 바로 값 넣어서 아이템 추가하는 경우
 
-    ```swift
-     var mascot = [String: String]()
-     mascot["EBS"] = "뽀로로"			// 추가 (없는 키에 값을 넣어 추가)
-     mascot["EBS"] = "펭수"			//	수정 
-    ```
+      ```swift
+       var mascot = [String: String]()
+       mascot["EBS"] = "뽀로로"			// 추가 (없는 키에 값을 넣어 추가)
+       mascot["EBS"] = "펭수"			//	수정 
+      ```
   
     
 
     - .updateValue(<저장데이터>, forKey:<저장데이터>)
-    - 수정, 추가 전 값을 반환
+    	- 수정, 추가 전 값을 반환
   
-    ```swift
-     mascot.updateValue("미키마우스", forKey: "디즈니")	// 추가
-     // nil반환
+      ```swift
+       mascot.updateValue("미키마우스", forKey: "디즈니")	// 추가
+       // nil반환
+      
+       mascot.updateValue("엘사", forKey: "디즈니")		// 수정, 수정전 value반환
+       // 미키마우스
     
-     mascot.updateValue("엘사", forKey: "디즈니")		// 수정, 수정전 value반환
-     // 미키마우스
-    
-    ```
+      ```
 
     
 
   - 아이템 삭제
   
-    - nil값 넣는 방법
+    - nil값 넣어 value를 없애는 방법
   
-    ```swift
-    mascot["EBS"] = nil
-    ```
+      ```swift
+      mascot["EBS"] = nil
+      ```
     
     
     
   - removeValue(forKey:)
       - 삭제한 값 반환, 없는 키 삭제시 nil값 반환
   
-    ```swift
-    mascot.removeValue(forKey: "디즈니")		// 엘사
-    mascot.removeValue(forKey: "디즈니")		// nil
-    ```
+      ```swift
+      mascot.removeValue(forKey: "디즈니")		// 엘사
+      mascot.removeValue(forKey: "디즈니")		// nil
+      ```
     
     
   
   - 순회 탐색
   
-  ```swift
-  let mascot: [String: String] = ["EBS": "펭수", "디즈니": "엘사"]
-  for row in mascot {
-	  let(key, value) = row
-    print(“현재 \(key): \(value) ”) }
-  }
-		// 현재 EBS: 펭수
+    ```swift
+    let mascot: [String: String] = ["EBS": "펭수", "디즈니": "엘사"]
+    for row in mascot {
+  	let(key, value) = row
+    	print(“현재 \(key): \(value) ”) 
+    }
+  		// 현재 EBS: 펭수
   		// 현재 디즈니: 엘사
 
-  for (key, value) in mascot {
-  print(“현재 \(key): \(value) ”) }
-  }
+    for (key, value) in mascot {
+  	print(“현재 \(key): \(value) ”) 
+    }
    		 // 현재 EBS: 펭수
   		// 현재 디즈니: 엘사
-  ```
+    ```
   
   
   
