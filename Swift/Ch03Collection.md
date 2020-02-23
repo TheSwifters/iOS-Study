@@ -156,27 +156,27 @@
 
     - 반복문 사용
 
-    ```swift
-    for i in 0..<student.count {
-      print("\(i)번째 학생은 \(student[i])입니다.")
-    }
-    // 참솔
-    // 중창
-    // 유진
-    // ...
+      ```swift
+      for i in 0..<student.count {
+      	print("\(i)번째 학생은 \(student[i])입니다.")
+      }
+      // 참솔
+      // 중창
+      // 유진
+      // ...
 
-    ```
+      ```
     
     
     
     - Lterator: for문에 배열을 직접 넣어 사용하는 방식
     
-    ```swift
-     for row in student {
-      	let index = student.index(of: row)
-          	print(“\(index)번째 학생은  \(row)”)
-        }
-    ```
+      ```swift
+       for row in student {
+        	let index = student.index(of: row)
+            	print(“\(index)번째 학생은  \(row)”)
+       }
+      ```
     
     
 
@@ -290,18 +290,18 @@
 
   - .removeAll() 일괄삭제
 
-  ```swift
-  id.removeAll()
-  ```
+    ```swift
+    id.removeAll()
+    ```
 
   - .remove() 일치항목 삭제
     - 일치항목 삭제후 삭제 아이템 반환
     - 일치항목 없을 경우 nil을 반환한다.
 
-  ```swift
-  id.remove("jisng")			// jisng반환
-  id.remove("jisong")			// nil 반환
-  ```
+    ```swift
+    id.remove("jisng")			// jisng반환
+    id.remove("jisong")			// nil 반환
+    ```
 
 - 집합관련 메소드
 
@@ -459,9 +459,9 @@
 - Key - value 형식 순서없이 모은 자료형
 
 
-```swift
-[  key : value, key : vlaue, ... ]
-```
+  ```swift
+  [  key : value, key : vlaue, ... ]
+  ```
 
 
 
@@ -477,9 +477,9 @@
   - 딕셔너리로부터 키를 호출해서 저장된 값을 불러올 때 없는 키 호출 가능성 때문에 값을 옵셔널 타입으로 반환한다.
   - 해시 연산에 의한 결과 값 역시 연속되는 값은 아니다.
 
-- value가 옵셔널 타입으로 들어있다.
+- value가 옵셔널 타입으로 반환된다.
 
-  - key가 존재하지 않는경우 값이 nil이 들어있을 수 있으므로
+  - key에 해당하는 값이 없을 경우에 error가 발생할 수 있기 때문에 optional type으로 감싸서 값을 반환
 
 - key의 타입은 해시연산이 가능한 타입이어야한다.
 
