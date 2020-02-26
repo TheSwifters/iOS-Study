@@ -348,6 +348,7 @@
   <img src="assets/CH03/collectionSeconde.jpeg" alt="집합 포함 메소드" height="50%" width="50%">
   </p>
 
+
 - isSuperset(of:) 
   - 주어진 집합이 특정집합의 하위 집합이면 true 반환
 - isStrictSuperset(of:) 
