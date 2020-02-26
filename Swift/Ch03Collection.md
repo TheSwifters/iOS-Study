@@ -327,8 +327,9 @@
   odd.subtract(num)		// 5,7,9
   ```
 
-  ![IMG_3476](https://user-images.githubusercontent.com/53036267/74744501-b94af400-52a5-11ea-91aa-584f66444c4f.jpeg)
-
+  <p align="center">
+  <img src="assets/CH03/collectionFirst.jpeg" alt="집합 기본 메소드" height="50%" width="50%">
+  </p>
   
 
   
@@ -343,19 +344,28 @@
 
   -  isSubset(of:)와 비슷하지만 주어진 두 집합이 일치할 경우 false
 
-![IMG_3475](https://user-images.githubusercontent.com/53036267/74744873-5148dd80-52a6-11ea-937e-65a178cc953c.jpeg)
+<p align="center">
+  <img src="assets/CH03/collectionSecond.jpeg" alt="집합 포함 메소드" height="50%
+" width="50%">
+  </p>
 
 - isSuperset(of:) 
   - 주어진 집합이 특정집합의 하위 집합이면 true 반환
 - isStrictSuperset(of:) 
   - isSuperset(of:) 와 비슷하지만 주어진 두 집합이 같으면 false반환
 
-![IMG_3474](https://user-images.githubusercontent.com/53036267/74744899-5efe6300-52a6-11ea-9720-f04782ca5b35.jpeg)
+<p align="center">
+  <img src="assets/CH03/collectionThird.jpeg" alt="상위 집합 메소드" height="50%
+" width="50%">
+  </p>
 
 - isDisjoint(with:) 
   - 두 집합 사이의 공통 값이 없을 때 true 반환
 
-![IMG_3477](https://user-images.githubusercontent.com/53036267/74744937-70e00600-52a6-11ea-9469-b3bc79b66d5d.jpeg)
+<p align="center">
+  <img src="assets/CH03/collectionFourth.jpeg" alt="공집합" height="50%
+" width="50%">
+  </p>
 
 
 
