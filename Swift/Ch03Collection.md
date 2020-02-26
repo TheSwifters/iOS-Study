@@ -345,8 +345,7 @@
   -  isSubset(of:)와 비슷하지만 주어진 두 집합이 일치할 경우 false
 
   <p align="center">
-  <img src="assets/CH03/collectionSeconde.jpeg" alt="집합 포함 메소드" height="50%
-" width="50%">
+  <img src="assets/CH03/collectionSeconde.jpeg" alt="집합 포함 메소드" height="50%" width="50%">
   </p>
 
 - isSuperset(of:) 
