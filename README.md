@@ -35,6 +35,6 @@ Swfit 및 iOS에 대해 스터디하고 내용을 정리하는 공간입니다.
 | 20.02.24 | [hongdonghyun](https://github.com/hongdonghyun) | Function: Closure | [CH06. Function-Clousre](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH06.Function-Closure.md) |
 | 20.02.25 | [Lance-Ahn](https://github.com/Lance-ahn) | Class and Struct<br />- Basic, Property, Method | [CH07. Struct and Class(1)](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH07.Struct-and-Class(1).md#a-구조체와-클래스의-기본개념) |
 | 20.02.26 | [Soohan Lee](https://github.com/martinolee) | Class and Struct<br />- Initialize<br />- Inheritance<br />- Type Casting<br />- Optional Chaining | [CH 08. Struct and Class(2)](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH08.Struct-and-Class.md) |
-| 20.02.27 | [you kyung](https://github.com/wydryd125) | Enumeration, Protocol, Extension | WIP |
+| 20.02.27 | [you kyung](https://github.com/wydryd125) | Enumeration, Protocol, Extension | [CH09. Enumeration, Protocol, Extension](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH09.Enumeration-Protocol-Extension.md) |
 | 20.02.28 | [didwndckd](https://github.com/didwndckd) | Error Handling<br />- do-catch<br />- try, try?, try!<br />- throw, throws<br />- Error, NSError | [CH 10. Error Handling](https://github.com/TheSwifters/iOS-Study/blob/master/Swift/CH10.ErrorHandling.md) |
 
